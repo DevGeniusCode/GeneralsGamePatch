@@ -144,11 +144,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = RADIOBUTTON;
-        SCREENRECT = UPPERLEFT: 135 215,
-                     BOTTOMRIGHT: 279 247,
+        SCREENRECT = UPPERLEFT: 408 208,
+                     BOTTOMRIGHT: 552 240,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:RadioMedium";
-        STATUS = ENABLED+HIDDEN+IMAGE+BORDER;
+        STATUS = ENABLED+IMAGE+BORDER;
         STYLE = RADIOBUTTON+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -193,11 +193,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = RADIOBUTTON;
-        SCREENRECT = UPPERLEFT: 135 183,
-                     BOTTOMRIGHT: 279 215,
+        SCREENRECT = UPPERLEFT: 400 176,
+                     BOTTOMRIGHT: 552 208,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:RadioHigh";
-        STATUS = ENABLED+HIDDEN+IMAGE+BORDER;
+        STATUS = ENABLED+IMAGE+BORDER;
         STYLE = RADIOBUTTON+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -242,11 +242,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = RADIOBUTTON;
-        SCREENRECT = UPPERLEFT: 135 247,
-                     BOTTOMRIGHT: 279 279,
+        SCREENRECT = UPPERLEFT: 408 248,
+                     BOTTOMRIGHT: 552 280,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:RadioLow";
-        STATUS = ENABLED+HIDDEN+IMAGE+BORDER;
+        STATUS = ENABLED+IMAGE+BORDER;
         STYLE = RADIOBUTTON+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -444,7 +444,7 @@ WINDOW
                      BOTTOMRIGHT: 650 523,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:NetworkParent";
-        STATUS = ENABLED+NOFOCUS;
+        STATUS = ENABLED+HIDDEN+NOFOCUS;
         STYLE = USER;
         SYSTEMCALLBACK = "PassMessagesToParentSystem";
         INPUTCALLBACK = "[None]";
@@ -1423,11 +1423,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 731 59,
-                     BOTTOMRIGHT: 883 87,
+        SCREENRECT = UPPERLEFT: 408 136,
+                     BOTTOMRIGHT: 568 168,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:";
-        STATUS = ENABLED+HIDDEN;
+        STATUS = ENABLED;
         STYLE = STATICTEXT+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -1523,7 +1523,7 @@ WINDOW
                        BOTTOMRIGHT: 385 249,
                        CREATIONRESOLUTION: 800 600;
           NAME = "OptionsMenu.wnd:SliderGamma";
-          STATUS = ENABLED+IMAGE+TABSTOP;
+          STATUS = ENABLED+HIDDEN+IMAGE+TABSTOP;
           STYLE = HORZSLIDER+MOUSETRACK;
           SYSTEMCALLBACK = "[None]";
           INPUTCALLBACK = "[None]";
@@ -1565,8 +1565,8 @@ WINDOW
                            IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255;
           SLIDERDATA = MINVALUE: 0,
                        MAXVALUE: 100;
-          SLIDERTHUMBENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 255 128 128 255, BORDERCOLOR: 255 0 0 255,
-                                       IMAGE: NoImage, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
+          SLIDERTHUMBENABLEDDRAWDATA = IMAGE: ScrollBarThumbEnabled, COLOR: 255 128 128 255, BORDERCOLOR: 255 0 0 255,
+                                       IMAGE: ScrollBarThumbHiliteSelected, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
                                        IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
                                        IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
                                        IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
@@ -1574,7 +1574,7 @@ WINDOW
                                        IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
                                        IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
                                        IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255;
-          SLIDERTHUMBDISABLEDDRAWDATA = IMAGE: NoImage, COLOR: 64 64 64 255, BORDERCOLOR: 128 128 128 255,
+          SLIDERTHUMBDISABLEDDRAWDATA = IMAGE: ScrollBarThumbDisabled, COLOR: 64 64 64 255, BORDERCOLOR: 128 128 128 255,
                                         IMAGE: NoImage, COLOR: 0 0 0 255, BORDERCOLOR: 64 64 64 255,
                                         IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
                                         IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
@@ -1600,7 +1600,7 @@ WINDOW
                        BOTTOMRIGHT: 387 221,
                        CREATIONRESOLUTION: 800 600;
           NAME = "OptionsMenu.wnd:GammaLabel";
-          STATUS = ENABLED;
+          STATUS = ENABLED+HIDDEN;
           STYLE = STATICTEXT+MOUSETRACK;
           SYSTEMCALLBACK = "[None]";
           INPUTCALLBACK = "[None]";
@@ -1645,11 +1645,11 @@ WINDOW
         CHILD
         WINDOW
           WINDOWTYPE = COMBOBOX;
-          SCREENRECT = UPPERLEFT: 199 269,
-                       BOTTOMRIGHT: 339 297,
+          SCREENRECT = UPPERLEFT: 201 182,
+                       BOTTOMRIGHT: 341 204,
                        CREATIONRESOLUTION: 800 600;
           NAME = "OptionsMenu.wnd:ComboBoxAntiAliasing";
-          STATUS = ENABLED+HIDDEN+IMAGE;
+          STATUS = ENABLED+IMAGE;
           STYLE = MOUSETRACK+COMBOBOX;
           SYSTEMCALLBACK = "[None]";
           INPUTCALLBACK = "[None]";
@@ -1886,11 +1886,11 @@ WINDOW
         CHILD
         WINDOW
           WINDOWTYPE = STATICTEXT;
-          SCREENRECT = UPPERLEFT: 179 241,
-                       BOTTOMRIGHT: 343 269,
+          SCREENRECT = UPPERLEFT: 179 261,
+                       BOTTOMRIGHT: 343 289,
                        CREATIONRESOLUTION: 800 600;
           NAME = "OptionsMenu.wnd:";
-          STATUS = ENABLED+HIDDEN;
+          STATUS = ENABLED;
           STYLE = STATICTEXT+MOUSETRACK;
           SYSTEMCALLBACK = "[None]";
           INPUTCALLBACK = "[None]";
@@ -2571,7 +2571,7 @@ WINDOW
                      BOTTOMRIGHT: 650 395,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:ScrollParent";
-        STATUS = ENABLED;
+        STATUS = ENABLED+HIDDEN;
         STYLE = USER;
         SYSTEMCALLBACK = "PassMessagesToParentSystem";
         INPUTCALLBACK = "[None]";
@@ -2937,11 +2937,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = CHECKBOX;
-        SCREENRECT = UPPERLEFT: 723 155,
-                     BOTTOMRIGHT: 935 191,
+        SCREENRECT = UPPERLEFT: 408 320,
+                     BOTTOMRIGHT: 624 360,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:CheckLanguageFilter";
-        STATUS = ENABLED+HIDDEN+IMAGE+BORDER;
+        STATUS = ENABLED+IMAGE+BORDER;
         STYLE = CHECKBOX+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -2991,7 +2991,7 @@ WINDOW
                      BOTTOMRIGHT: 650 267,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:AudioParent";
-        STATUS = ENABLED;
+        STATUS = ENABLED+HIDDEN;
         STYLE = USER;
         SYSTEMCALLBACK = "PassMessagesToParentSystem";
         INPUTCALLBACK = "[None]";
@@ -3315,7 +3315,7 @@ WINDOW
                      BOTTOMRIGHT: 640 152,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:SliderMusicVolume";
-        STATUS = ENABLED+IMAGE+TABSTOP;
+        STATUS = ENABLED+HIDDEN+IMAGE+TABSTOP;
         STYLE = HORZSLIDER+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -3392,7 +3392,7 @@ WINDOW
                      BOTTOMRIGHT: 640 208,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:SliderSFXVolume";
-        STATUS = ENABLED+IMAGE+TABSTOP;
+        STATUS = ENABLED+HIDDEN+IMAGE+TABSTOP;
         STYLE = HORZSLIDER+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -3465,11 +3465,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 747 127,
-                     BOTTOMRIGHT: 923 167,
+        SCREENRECT = UPPERLEFT: 400 360,
+                     BOTTOMRIGHT: 640 392,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:ButtonKeyboardOptions";
-        STATUS = ENABLED+HIDDEN+IMAGE;
+        STATUS = ENABLED+IMAGE;
         STYLE = PUSHBUTTON+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -3513,11 +3513,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = CHECKBOX;
-        SCREENRECT = UPPERLEFT: 647 487,
-                     BOTTOMRIGHT: 919 511,
+        SCREENRECT = UPPERLEFT: 162 310,
+                     BOTTOMRIGHT: 352 344,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:CheckBoxSaveCamera";
-        STATUS = ENABLED+HIDDEN+IMAGE;
+        STATUS = ENABLED+IMAGE;
         STYLE = CHECKBOX+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -3561,11 +3561,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = CHECKBOX;
-        SCREENRECT = UPPERLEFT: 647 511,
-                     BOTTOMRIGHT: 919 535,
+        SCREENRECT = UPPERLEFT: 168 350,
+                     BOTTOMRIGHT: 352 376,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:CheckBoxUseCamera";
-        STATUS = ENABLED+HIDDEN+IMAGE;
+        STATUS = ENABLED+IMAGE;
         STYLE = CHECKBOX+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -3659,11 +3659,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = CHECKBOX;
-        SCREENRECT = UPPERLEFT: 647 535,
-                     BOTTOMRIGHT: 919 559,
+        SCREENRECT = UPPERLEFT: 165 423,
+                     BOTTOMRIGHT: 344 456,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:CheckBoxDrawAnchor";
-        STATUS = ENABLED+HIDDEN+IMAGE;
+        STATUS = ENABLED+IMAGE;
         STYLE = CHECKBOX+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -3707,11 +3707,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = CHECKBOX;
-        SCREENRECT = UPPERLEFT: 647 559,
-                     BOTTOMRIGHT: 919 583,
+        SCREENRECT = UPPERLEFT: 168 448,
+                     BOTTOMRIGHT: 323 488,
                      CREATIONRESOLUTION: 800 600;
         NAME = "OptionsMenu.wnd:CheckBoxMoveAnchor";
-        STATUS = ENABLED+HIDDEN+IMAGE;
+        STATUS = ENABLED+IMAGE;
         STYLE = CHECKBOX+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -4626,7 +4626,7 @@ WINDOW
                          BOTTOMRIGHT: 630 288,
                          CREATIONRESOLUTION: 800 600;
             NAME = "OptionsMenu.wnd:CheckHeatEffects";
-            STATUS = ENABLED+IMAGE+BORDER;
+            STATUS = ENABLED+HIDDEN+IMAGE+BORDER;
             STYLE = CHECKBOX+MOUSETRACK;
             SYSTEMCALLBACK = "[None]";
             INPUTCALLBACK = "[None]";
@@ -4675,7 +4675,7 @@ WINDOW
                          BOTTOMRIGHT: 630 288,
                          CREATIONRESOLUTION: 800 600;
             NAME = "OptionsMenu.wnd:CheckUnlockFPS";
-            STATUS = ENABLED+HIDDEN+IMAGE+BORDER;
+            STATUS = ENABLED+IMAGE+BORDER;
             STYLE = CHECKBOX+MOUSETRACK;
             SYSTEMCALLBACK = "[None]";
             INPUTCALLBACK = "[None]";
