@@ -150,6 +150,30 @@
                 ]
             },
             {
+                "name": "OptionalLangHebrew",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/generals.str",
+                                "target": "Data/Hebrew/generals.csf"
+                            }
+                        ],
+                        "params": {
+                            "language": "Swedish",
+                            "excludeMarkersList": [
+                                [
+                                    "//patch104p-core-begin",
+                                    "//patch104p-core-end"
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
                 "name": "OptionalLangItalian",
                 "big": true,
                 "files": [
@@ -259,30 +283,6 @@
                         ],
                         "params": {
                             "language": "Spanish",
-                            "excludeMarkersList": [
-                                [
-                                    "//patch104p-core-begin",
-                                    "//patch104p-core-end"
-                                ]
-                            ]
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "OptionalLangHebrew",
-                "big": true,
-                "files": [
-                    {
-                        "sourceParent": "GameFilesEdited",
-                        "sourceTargetList": [
-                            {
-                                "source": "Data/generals.str",
-                                "target": "Data/Hebrew/generals.csf"
-                            }
-                        ],
-                        "params": {
-                            "language": "Swedish",
                             "excludeMarkersList": [
                                 [
                                     "//patch104p-core-begin",

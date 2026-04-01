@@ -98,6 +98,21 @@
                 ]
             },
             {
+                "name": "CoreAudioHebrew",
+                "big": true,
+                "files": [
+                    {
+                        "sourceParent": "GameFilesEdited",
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Audio/Sounds/Hebrew/*.wav",
+                                "target": "Data/Audio/Sounds/Hebrew/*.wav"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "name": "CoreAudioItalian",
                 "big": true,
                 "files": [
@@ -167,21 +182,6 @@
                             {
                                 "source": "Data/Audio/Sounds/English/*.wav",
                                 "target": "Data/Audio/Sounds/Spanish/*.wav"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "CoreAudioHebrew",
-                "big": true,
-                "files": [
-                    {
-                        "sourceParent": "GameFilesEdited",
-                        "sourceTargetList": [
-                            {
-                                "source": "Data/Audio/Sounds/English/*.wav",
-                                "target": "Data/Audio/Sounds/English/*.wav"
                             }
                         ]
                     }
