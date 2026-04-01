@@ -129,6 +129,27 @@
                 ]
             },
             {
+                "name": "FullHebrew",
+                "itemNames": [
+                    "OptionalAudio",
+                    "OptionalAudioHebrew",
+                    "OptionalINI",
+                    "OptionalLangHebrew",
+                    "OptionalTextures",
+                    "OptionalW3D",
+                    "CoreAudio",
+                    "CoreAudioHebrew",
+                    "CoreINI",
+                    "CoreLangHebrew",
+                    "CoreMaps",
+                    "CoreMisc",
+                    "CoreTextures",
+                    "CoreW3D",
+                    "CoreWindow",
+                    "RecoveredTextures"
+                ]
+            },
+            {
                 "name": "FullItalian",
                 "itemNames": [
                     "OptionalAudio",
@@ -225,27 +246,6 @@
                     "CoreAudioSpanish",
                     "CoreINI",
                     "CoreLangSpanish",
-                    "CoreMaps",
-                    "CoreMisc",
-                    "CoreTextures",
-                    "CoreW3D",
-                    "CoreWindow",
-                    "RecoveredTextures"
-                ]
-            },
-            {
-                "name": "FullHebrew",
-                "itemNames": [
-                    "OptionalAudio",
-                    "OptionalAudioHebrew",
-                    "OptionalINI",
-                    "OptionalLangHebrew",
-                    "OptionalTextures",
-                    "OptionalW3D",
-                    "CoreAudio",
-                    "CoreAudioHebrew",
-                    "CoreINI",
-                    "CoreLangHebrew",
                     "CoreMaps",
                     "CoreMisc",
                     "CoreTextures",
